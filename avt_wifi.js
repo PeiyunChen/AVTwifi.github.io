@@ -15,7 +15,7 @@ function updateQRCode() {
    
    var text1 = "WIFI:S:Xiaomi_PC16u;T:WPA;P:shuhuilu;H:false;;";
    var date = new Date();
-   console.log(date.getDate());
+   //console.log(date.getDate());
    qrcode.replaceChild(showQRCode(text), qrcode.lastChild);
 }
 
