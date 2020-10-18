@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://cdn.rawgit.com/amanuel/JS-HTML5-QRCode-Generator/master/qrcode.js"></script>
+    <script src="https://cdn.rawgit.com/amanuel/JS-HTML5-QRCode-Generator/master/html5-qrcode.js"></script>
+
+    
+    <link rel="stylesheet" href="avt.css">
+</head>
+<body>
+    <h1>WiFi</h1>
+
+    <form id="form">
+        <label><span>SSID:</span><input id="ssid" placeholder="SSID"></label>
+        <label><span>Password:</span><input id="password" placeholder="Password"></label>
+        <label>
+            <span>Encryption:</span>
+            <select id="enc">
+                <option>WPA</option>
+                <option>WEP</option>
+            </select>
+        </label>
+        <label><span>Is Hidden?</span><input type="checkbox" id="hidden"></label>
+
+        <button id="print" onclick="window.print()">Print</button>
+    </form>
+
+    <div id="qrcode">
+        <img>
+    </div>
+    <script src="avt_wifi.js"></script>
+</body>
+</html>
