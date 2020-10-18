@@ -7,9 +7,9 @@ function updateQRCode() {
    var hidden = document.getElementById("hidden").checked;
    var qrcode = document.getElementById("qrcode");
    
-   console.log(pw + "\n");
-   console.log(enc + "\n");
-   console.log(hidden + "\n");
+   //console.log(pw + "\n");
+   //console.log(enc + "\n");
+   //console.log(hidden + "\n");
    //console.log(qrcode + "\n");
    var text = "WIFI:S:" + ssid + ";T:" + enc + ";P:" + pw + ";H:" + hidden + ";;";
    
