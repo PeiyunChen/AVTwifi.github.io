@@ -30,6 +30,7 @@ async function getData(){
             console.log(start_date);
             wifi_password = row[8];
             console.log(wifi_password);
+            console.log("success");
          }
             
       }
@@ -57,7 +58,7 @@ async function updateQRCode() {
    
    var text1 = "WIFI:S:Xiaomi_PC16u;T:WPA;P:shuhuilu;H:false;;";
    var text2 = "WIFI:S:" + ssid + ";T:" + enc + ";P:" + pw + ";;";
-   var text_with_csv = "WIFI:S:vw-guest;T:WPA;P:"+wifi_password+";H:false;image : 'wifi-logo-260nw-312606470.jpg'; ;";
+   var text_with_csv = "WIFI:S:vw-guest;T:WPA;P:"+wifi_password+";H:false;;";
    
    var a = localStorage.setItem("text",text2);
    //console.log(date.getMonth());
