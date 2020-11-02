@@ -1,22 +1,44 @@
 h1,
 form,
 #qrcode {
-  width: 100%;
-  height: auto;
-  
+  width: 395px;
+  margin: 2rem auto;
+  font: 16px sans-serif;
 }
 
 h1 {
   font-size: 64px;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid black;
   font-family: "Times New Roman", Times, serif;
 }
 
-
-
-
-
-img{
+h1,
+label,
+button {
+  display: flex;
   width: 100%;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+
+label > * { flex: 1; }
+label > span {
+  max-width: 8rem;
+  margin-right: 1rem;
+}
+
+@media print {
+  #print { display: none; }
+  label,
+  input,
+  select {
+    border: none;
+    background: none;
+    font-size: 24px;
+  }
+}
+img{
+  width:90%;
   height:auto;
 }
