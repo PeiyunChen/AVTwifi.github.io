@@ -43,10 +43,10 @@ async function getData(){
 
 async function updateQRCode() {
     
-   var ssid = document.getElementById("ssid").value;
+   //var ssid = document.getElementById("ssid").value;
    //console.log("hi");
-   var pw = document.getElementById("password").value;
-   var enc = document.getElementById("enc").value;
+   //var pw = document.getElementById("password").value;
+   //var enc = document.getElementById("enc").value;
    //var hidden = document.getElementById("hidden").checked;
    var qrcode = document.getElementById("qrcode");
    
@@ -57,10 +57,10 @@ async function updateQRCode() {
    //var text = "WIFI:S:" + ssid + ";T:" + enc + ";P:" + pw + ";H:" + hidden + ";;";
    
    var text1 = "WIFI:S:Xiaomi_PC16u;T:WPA;P:shuhuilu;H:false;;";
-   var text2 = "WIFI:S:" + ssid + ";T:" + enc + ";P:" + pw + ";;";
+   //var text2 = "WIFI:S:" + ssid + ";T:" + enc + ";P:" + pw + ";;";
    var text_with_csv = "WIFI:S:vw-guest;T:WPA;P:"+wifi_password+";H:false;;";
    
-   var a = localStorage.setItem("text",text2);
+   //var a = localStorage.setItem("text",text2);
    //console.log(date.getMonth());
    //console.log(date.getDate());
    //console.log(date.getUTCMonth());
@@ -97,3 +97,15 @@ getData();
 //var a  = localStorage.getItem("page");
 //console.log(a)
 //updateQRCode();
+
+/*<！label><！span>SSID:<！！/span><!input id="ssid" placeholder="SSID"><!/label>
+        <!label><!span>Password:<!/span><!input id="password" placeholder="Password"><!/label>
+        <label>
+            <span>Encryption:</span>
+            <select id="enc">
+                <option>WPA</option>
+                <option>WEP</option>
+            </select>
+        </label>
+        <!label><!span><!/span><!input type="checkbox" id="hidden"><!/label>
+*/
