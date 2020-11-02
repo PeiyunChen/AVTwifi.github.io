@@ -18,6 +18,13 @@ img{
 }
 
 
+
+label > * { flex: 1; }
+label > span {
+  max-width: 12rem;
+  margin-right: 1rem;
+}
+
 @media print {
   #print { display: none; }
   label,
