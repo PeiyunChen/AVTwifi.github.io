@@ -13,14 +13,15 @@ h1 {
 }
 
 img{
-  width: 90%;
+  width: 80%;
   height:auto;
 }
 
 
+
 label > * { flex: 1; }
 label > span {
-  max-width: 10rem;
+  max-width: 8rem;
   margin-right: 1rem;
 }
 
